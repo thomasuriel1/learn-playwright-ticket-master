@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint", 
+    "tests": "npx playwright test",
+    "test:crear": "npx playwright codegen"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
@@ -60,6 +62,7 @@
     "zod": "^3.24.1"
   },
   "devDependencies": {
+    "@playwright/test": "^1.52.0",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
