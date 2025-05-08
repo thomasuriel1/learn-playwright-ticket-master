@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('cuando se elije la cantidad de entradas y se llenan los campos se espera q la compra se lleve a cabo', async ({ page }) => {
   await page.goto('http://localhost:3000/');
   await page.locator('div').filter({ hasText: /^\$85\.99Ver detalles$/ }).getByRole('link').click();
   await page.getByRole('button', { name: 'Comprar entradas' }).click();
