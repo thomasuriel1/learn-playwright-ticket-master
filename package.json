@@ -12,7 +12,10 @@
     "prisma:generate": "npx prisma generate",
     "prisma:migrate": "npx prisma migrate dev",
     "prisma:db:create": "npx prisma db push",
-    "prisma:studio": "npx prisma studio"
+    "prisma:studio": "npx prisma studio",
+    "test:report": "npx playwright show-report",
+    "test:headed": "npx playwright test --headed",
+    "codegen": "npx playwright codegen"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
